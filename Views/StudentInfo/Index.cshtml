@@ -1,0 +1,40 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <h1>ADD STUDENT INFORMATION </h1>
+        <form action="" method="post">
+            <p>Enter Rollno</p>
+            <p><input type="text" name="txtroll" /></p>
+            <p>Enter Name</p>
+            <p><input type="text" name="txtname" /></p>
+            <p>Enter Branch</p>
+            <p><input type="text" name="txtbranch" /></p>
+            <p>Enter Fees</p>
+            <p><input type="text" name="txtfees" /></p>
+            <p><input type="submit" name="btnsubmit" value="Click" /></p>
+
+
+        </form>
+
+        @ViewBag.RNO
+        <br />
+        @ViewBag.Name
+        <br />
+        @ViewBag.Branch
+        <br />
+        @ViewBag.Fees
+
+    </div>
+</body>
+</html>

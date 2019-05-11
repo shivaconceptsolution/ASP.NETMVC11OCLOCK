@@ -1,0 +1,28 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <form action="Param/Index" method="post">
+            <input type="text" name="txtname" placeholder="Enter Name" />
+            <br />
+            <br />
+            <input type="text" name="txtmobile" placeholder="Enter Mobileno" />
+            <br />
+            <br />
+            <input type="submit" name="btnsubmit" value="Click" />
+
+        </form>
+        @ViewBag.Result
+    </div>
+</body>
+</html>

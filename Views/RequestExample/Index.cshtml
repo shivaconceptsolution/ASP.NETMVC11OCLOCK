@@ -1,0 +1,24 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        <form action="RequestExample/Index" method="post">
+            <input type="text" name="txtname" placeholder="Enter Name" />
+            <br />
+            <input type="submit" name="btnsubmit" value="Click" />
+
+        </form>
+        @ViewBag.data
+    </div>
+</body>
+</html>

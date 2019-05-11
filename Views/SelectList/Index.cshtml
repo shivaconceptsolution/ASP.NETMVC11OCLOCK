@@ -1,0 +1,31 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm())
+        {
+            <p> Select CourseName</p>
+            <br>
+            @Html.DropDownList("course", (IEnumerable<SelectListItem>)ViewBag.course)
+            <br />
+            @Html.ListBox("course1", (IEnumerable<SelectListItem>)ViewBag.course)
+            <br />
+            <input type="submit" name="btnsubmit" value="Click" />
+        }
+
+        DropDownLIST:-  @ViewBag.res
+        LISTBOXDATA:-    @ViewBag.res1
+
+    </div>
+</body>
+</html>

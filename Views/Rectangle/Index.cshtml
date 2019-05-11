@@ -1,0 +1,26 @@
+﻿@model MVCWEBAPP.Models.AreaRect
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm())  
+        {
+            <p>Enter Length:-  @Html.TextBoxFor(key => key.length)</p>
+            <p>Enter Width:-  @Html.TextBoxFor(key => key.width)</p>
+            <p><input type="submit" name="btnsubmit" value="Calculate" /> </p>
+
+
+        }
+        @ViewBag.Result
+    </div>
+</body>
+</html>

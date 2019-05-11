@@ -1,0 +1,63 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm())
+        {
+            @Html.Label("Enter Fullname")
+            <br />
+            @Html.TextBox("txtname")
+            <br />
+            @Html.Label("Enter password")
+            <br />
+            @Html.Password("txtpass")
+            <br />
+            @Html.Label("Select Technology")
+            <br />
+            @Html.RadioButton("r1", "JAVA")<span>JAVA</span>
+            @Html.RadioButton("r1", ".NET")<span>.NET</span>
+            @Html.RadioButton("r1", "PHP")<span>PHP</span>
+            <br />
+            @Html.Label("Select Basic Skills")
+            <br />
+            <input type="checkbox" name="c1" value="C" /><span>C(1200)</span>
+            <br />
+            <input type="checkbox" name="c2" value="CPP" /><span>CPP(2200)</span>
+
+            <br />
+            <br />
+
+            <select name="Country">
+                <option value="">Select Country</option>
+                <option value="IND">INDIA</option>
+                <option value="USA">USA</option>
+                <option value="CHINA">CHINA</option>
+                <option value="JAPAN">JAPAN</option>
+
+            </select>
+            <br />
+            <br />
+            <select name="State[]" multiple>
+              
+                <option value="MP">MP</option>
+                <option value="UP">UP</option>
+                <option value="AP">AP</option>
+               
+
+            </select>
+            <input type="submit" name="btnsubmit" value="Submit" />
+        }
+        @ViewBag.data
+    </div>
+</body>
+</html>
